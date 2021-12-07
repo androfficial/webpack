@@ -6,7 +6,7 @@ $maxWidth: 1920;
 @import 'mixins/mixins';
 
 // === <ШРИФТЫ ЛОКАЛЬНЫЕ> =============================================
-@import 'blocks/fonts.css';
+@import 'blocks/fonts';
 
 // === <ОБНУЛЕНИЕ> ====================================================
 @import 'blocks/null';
@@ -68,8 +68,6 @@ body {
 @import 'blocks/ui';
 
 // === <ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ> =================
-/* stylelint-disable-next-line no-invalid-position-at-import-rule */
-@import 'pages/test';
 
 // === <ОСНОВНОЙ БЛОК> =================================================
 .page {
