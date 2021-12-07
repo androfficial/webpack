@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-recommended-scss",
+    "stylelint-config-recess-order",
+    "stylelint-config-prettier"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order",
+    "stylelint-declaration-block-no-ignored-properties",
+    "stylelint-prettier"
+  ],
+  "rules": {
+    "plugin/declaration-block-no-ignored-properties": true,
+    "prettier/prettier": true,
+    "block-no-empty": null,
+    "no-descending-specificity": null
+  }
+}

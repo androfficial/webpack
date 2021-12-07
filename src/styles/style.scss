@@ -1,0 +1,77 @@
+// === <ПЕРЕМЕННЫЕ> ===================================================
+$maxWidthContainer: 1130;
+$maxWidth: 1920;
+
+// === <МИКСИНЫ> ======================================================
+@import 'mixins/mixins';
+
+// === <ШРИФТЫ ЛОКАЛЬНЫЕ> =============================================
+@import 'blocks/fonts.css';
+
+// === <ОБНУЛЕНИЕ> ====================================================
+@import 'blocks/null';
+
+html {
+  min-width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  background: url('../assets/image.jpg');
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+//<ОБОЛОЧКА>============================================================
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+}
+
+.webpack {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 15px;
+  font-size: 44px;
+  line-height: 120%;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 12px;
+}
+
+// === <КОНТЕЙНЕР> =====================================================
+._container {
+  max-width: 1130px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+// <ПОДКЛЮЧЕНИЕ ГОТОВЫХ КЛАССОВ>========================================
+/* stylelint-disable-next-line no-invalid-position-at-import-rule */
+@import 'blocks/ui';
+
+// === <ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ> =================
+/* stylelint-disable-next-line no-invalid-position-at-import-rule */
+@import 'pages/test';
+
+// === <ОСНОВНОЙ БЛОК> =================================================
+.page {
+  flex: 1 1 auto;
+}
