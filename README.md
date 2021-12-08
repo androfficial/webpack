@@ -5,7 +5,7 @@
 Clone repo
 
 ```bash
-https://github.com/androfficial/webpack
+https://github.com/androfficial/webpack.git
 ```
 
 Install dependencies
