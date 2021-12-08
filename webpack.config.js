@@ -58,13 +58,14 @@ const plugins = () => {
       new StyleLintPlugin({
         configFile: path.resolve(__dirname, '.stylelintrc.json'),
         context: path.resolve(__dirname, 'src/styles'),
-        files: ['**/*.{css,scss}'],
+        files: ['**/*.s?(a|c)ss'],
         failOnError: false,
       }),
       new ESLintPlugin({
         context: path.resolve(__dirname, 'src'),
         files: ['**/*.{js,jsx}'],
         failOnError: false,
+        emitWarning: true,
       })
     );
   }
@@ -98,9 +99,9 @@ module.exports = {
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src/'),
+      '@': path.resolve(__dirname, 'src'),
     },
-    extensions: ['.js', '.jsx', '.json', '.css', '.scss'],
+    extensions: ['.js', '.jsx', '.json', '.css', '.sass', '.scss'],
   },
   optimization: optimization(),
   devServer: {
