@@ -1,4 +1,12 @@
 {
+  "settings": {
+    "import/extensions": [".js", ".mjs", ".jsx", ".css", ".sass", ".scss"],
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".mjs", ".jsx", ".css", ".sass", ".scss"]
+      }
+    }
+  },
   "root": true,
   "env": {
     "browser": true,
@@ -28,6 +36,18 @@
   },
   "plugins": ["react", "react-hooks", "jsx-a11y", "prettier"],
   "rules": {
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "mjs": "never",
+        "css": "never",
+        "sass": "never",
+        "scss": "never"
+      }
+    ],
     "no-console": "off",
     "react/no-array-index-key": "off",
     "react/react-in-jsx-scope": "off",
