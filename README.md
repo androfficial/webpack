@@ -1,21 +1,19 @@
 # 📦 Webpack 5
 
-## Installation
 
-Clone repo
+## Clone repo:
 
 ```bash
 https://github.com/androfficial/webpack.git
 ```
 
-Install dependencies
+## Installation
 ```bash
 npm i
+yarn install    
 ```
-Or
-```bash
-yarn
-```
+
+---
 
 ## Usage
 
@@ -25,7 +23,9 @@ yarn
 npm run start
 ```
 
-You can view the development server at `localhost:3000`.
+You can view the development server at `localhost:3000`
+
+![Welcome Screen](./src/assets/joker.png)
 
 ### Development build
 
