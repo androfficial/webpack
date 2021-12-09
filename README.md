@@ -39,9 +39,12 @@ No hash in file names
 ```bash
 npm run build
 ```
+Build of the project, used to run on prod. Generates files in build folder
 
 ### Watch
 
 ```bash
 npm run watch
 ```
+
+Every time the files in project are changed, the project will be rebuilt
