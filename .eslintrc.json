@@ -1,12 +1,4 @@
 {
-  "settings": {
-    "import/extensions": [".js", ".mjs", ".jsx", ".css", ".sass", ".scss"],
-    "import/resolver": {
-      "node": {
-        "extensions": [".js", ".mjs", ".jsx", ".css", ".sass", ".scss"]
-      }
-    }
-  },
   "root": true,
   "env": {
     "browser": true,
@@ -34,8 +26,17 @@
     "requireConfigFile": false,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "jsx-a11y", "prettier"],
+  "plugins": ["react", "prettier"],
+  "settings": {
+    "import/extensions": [".js", ".mjs", ".jsx", ".css", ".sass", ".scss"],
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".mjs", ".jsx", ".css", ".sass", ".scss"]
+      }
+    }
+  },
   "rules": {
+    "prettier/prettier": "error",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -57,12 +58,6 @@
       {
         "namedComponents": "arrow-function",
         "unnamedComponents": "arrow-function"
-      }
-    ],
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
       }
     ]
   }
