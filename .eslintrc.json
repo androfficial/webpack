@@ -36,7 +36,12 @@
     }
   },
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "warn",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",
