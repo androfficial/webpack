@@ -9,7 +9,10 @@ https://github.com/androfficial/webpack.git
 
 ## Installation
 ```bash
-npm i
+npm i   
+```
+
+```bash
 yarn install    
 ```
 
