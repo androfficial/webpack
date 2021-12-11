@@ -58,13 +58,11 @@ const plugins = () => {
       new StyleLintPlugin({
         configFile: path.resolve(__dirname, '.stylelintrc.json'),
         context: path.resolve(__dirname, 'src/styles'),
-        files: ['**/*.s?(a|c)ss'],
-        failOnError: false,
+        files: '**/*.s?(a|c)ss',
       }),
       new ESLintPlugin({
         context: path.resolve(__dirname, 'src'),
-        files: ['**/*.{js,jsx}'],
-        failOnError: false,
+        files: '**/*.{js,jsx}',
         emitWarning: true,
       })
     );

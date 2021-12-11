@@ -3,17 +3,18 @@
     "stylelint-config-recommended",
     "stylelint-config-recommended-scss",
     "stylelint-config-recess-order",
-    "stylelint-config-prettier"
+    "stylelint-prettier/recommended"
   ],
   "plugins": [
     "stylelint-scss",
-    "stylelint-order",
     "stylelint-declaration-block-no-ignored-properties",
     "stylelint-prettier"
   ],
   "rules": {
-    "plugin/declaration-block-no-ignored-properties": true,
     "prettier/prettier": true,
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "plugin/declaration-block-no-ignored-properties": true,
     "block-no-empty": null,
     "no-descending-specificity": null
   }
