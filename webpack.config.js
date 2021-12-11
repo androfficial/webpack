@@ -59,11 +59,12 @@ const plugins = () => {
         configFile: path.resolve(__dirname, '.stylelintrc.json'),
         context: path.resolve(__dirname, 'src/styles'),
         files: '**/*.s?(a|c)ss',
+        failOnError: false,
       }),
       new ESLintPlugin({
         context: path.resolve(__dirname, 'src'),
         files: '**/*.{js,jsx}',
-        emitWarning: true,
+        failOnError: false,
       })
     );
   }
@@ -104,7 +105,10 @@ module.exports = {
   optimization: optimization(),
   devServer: {
     client: {
-      overlay: true,
+      overlay: {
+        errors: true,
+        warnings: false,
+      },
     },
     port: 3000,
     open: true,
