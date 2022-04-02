@@ -1,12 +1,10 @@
-import { useCallback, useState } from 'react';
-import Footer from '../Footer';
+import { useState } from 'react';
+import Footer from './components/Footer';
 
 const App = () => {
   const [counter, setCounter] = useState(0);
 
-  const increaseCounter = useCallback(() => {
-    setCounter((prev) => prev + 1);
-  }, [setCounter]);
+  const increaseCounter = () => setCounter((prev) => prev + 1);
 
   return (
     <div className='webpack'>
