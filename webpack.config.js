@@ -40,7 +40,8 @@ const plugins = () => {
       filename: path.resolve(__dirname, 'build/index.html'),
       template: path.resolve(__dirname, 'public/index.html'),
       favicon: path.resolve(__dirname, 'public/favicon.svg'),
-      inject: 'body',
+      scriptLoading: 'defer',
+      inject: 'head',
       minify: {
         collapseWhitespace: isProd,
       },
@@ -56,7 +57,7 @@ const plugins = () => {
     base.push(
       new ReactRefreshWebpackPlugin(),
       new StyleLintPlugin({
-        configFile: path.resolve(__dirname, '.stylelintrc.json'),
+        configFile: path.resolve(__dirname, '.stylelintrc'),
         context: path.resolve(__dirname, 'src/styles'),
         files: '**/*.s?(a|c)ss',
         failOnError: false,
