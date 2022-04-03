@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Footer from './components/Footer';
+import { Footer } from './components';
 
 const App = () => {
   const [counter, setCounter] = useState(0);
@@ -11,7 +11,6 @@ const App = () => {
       <strong>WEBPACK 5</strong>
       <Footer />
       <div className='webpack__info'>
-        <p className='webpack__text'>Example Hot Module Replacement</p>
         <button
           onClick={increaseCounter}
           className='webpack__button'
