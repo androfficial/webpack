@@ -1,9 +1,9 @@
 import { useState } from 'react';
+
 import Footer from './components/Footer';
 
 const App = () => {
   const [counter, setCounter] = useState(0);
-
   const increaseCounter = () => setCounter((prev) => prev + 1);
 
   return (
