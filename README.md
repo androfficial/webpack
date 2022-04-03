@@ -1,6 +1,5 @@
 # 📦 Webpack 5
 
-
 ## Clone repo:
 
 ```bash
@@ -8,12 +7,13 @@ https://github.com/androfficial/webpack.git
 ```
 
 ## Installation
+
 ```bash
-npm i   
+npm i
 ```
 
 ```bash
-yarn install    
+yarn install
 ```
 
 ---
@@ -28,13 +28,14 @@ npm run start
 
 You can view the development server at `localhost:3000`
 
-![Welcome Screen](./src/assets/joker.png)
+![Welcome Screen](./src/assets/joker-image.png)
 
 ### Development build
 
 ```bash
 npm run dev
 ```
+
 No hash in file names
 
 ### Production build
@@ -42,6 +43,7 @@ No hash in file names
 ```bash
 npm run build
 ```
+
 Build of the project, used to run on prod. Generates files in build folder
 
 ### Watch
